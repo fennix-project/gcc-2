@@ -1920,7 +1920,6 @@ x86_64-*-openbsd*)
 	gas=yes
 	gnu_ld=yes
 	;;
-	;;
 i[34567]86-*-fennix*)
     tm_file="${tm_file} i386/unix.h i386/att.h elfos.h glibc-stdint.h i386/i386elf.h fennix.h"
     ;;
