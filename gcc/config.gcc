@@ -794,7 +794,7 @@ case ${target} in
   gnu_ld=yes
   default_use_cxa_atexit=yes
   use_gcc_stdint=provide
-  native_system_header_dir=/usr/include
+  native_system_header_dir=/include
   ;;
 *-*-freebsd*)
   # This is the generic ELF configuration of FreeBSD.  Later
