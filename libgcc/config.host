@@ -724,11 +724,11 @@ x86_64-*-dragonfly*)
 	md_unwind_header=i386/dragonfly-unwind.h
 	;;
 i[34567]86-*-fennix*)
-	extra_parts="$extra_parts crti.o crtbegin.o crtend.o crtn.o"
+	extra_parts="$extra_parts crti.o crtn.o crtbegin.o crtend.o crtbeginS.o crtendS.o"
 	tmake_file="$tmake_file i386/t-crtstuff t-crtstuff-pic t-libgcc-pic"
 	;;
 x86_64-*-fennix*)
-	extra_parts="$extra_parts crti.o crtbegin.o crtend.o crtn.o"
+	extra_parts="$extra_parts crti.o crtn.o crtbegin.o crtend.o crtbeginS.o crtendS.o"
 	tmake_file="$tmake_file i386/t-crtstuff t-crtstuff-pic t-libgcc-pic"
 	;;
 i[34567]86-*-freebsd*)
