@@ -790,6 +790,7 @@ case ${target} in
   target_has_targetdm=yes
   ;;
 *-*-fennix*)
+  tmake_file="t-fennix "
   gas=yes
   gnu_ld=yes
   default_use_cxa_atexit=yes
@@ -1921,9 +1922,11 @@ x86_64-*-openbsd*)
 	gnu_ld=yes
 	;;
 i[34567]86-*-fennix*)
+	tmake_file="${tmake_file} i386/t-fennix"
     tm_file="${tm_file} i386/unix.h i386/att.h elfos.h glibc-stdint.h i386/i386elf.h fennix.h"
     ;;
 x86_64-*-fennix*)
+	tmake_file="${tmake_file} i386/t-fennix"
     tm_file="${tm_file} i386/unix.h i386/att.h elfos.h glibc-stdint.h i386/i386elf.h i386/x86-64.h fennix.h"
     ;;
 i[34567]86-*-linux* | i[34567]86-*-kfreebsd*-gnu | i[34567]86-*-gnu* | i[34567]86-*-kopensolaris*-gnu)
